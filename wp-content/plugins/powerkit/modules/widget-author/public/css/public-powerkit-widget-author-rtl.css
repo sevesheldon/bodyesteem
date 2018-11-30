@@ -1,0 +1,98 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/**
+ * Environment for all styles (variables, additions, etc).
+ */
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+.pk-widget-author {
+	position: relative;
+	text-align: center;
+}
+
+.pk-widget-author .pk-widget-author-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.pk-widget-author .pk-widget-author-bg img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+.pk-widget-author .pk-widget-author-container {
+	position: relative;
+	padding: 0 2rem;
+	z-index: 2;
+}
+
+.pk-widget-author .pk-author-avatar img {
+	border-radius: 100%;
+}
+
+.pk-widget-author .pk-author-data {
+	margin-top: 1rem;
+}
+
+.pk-widget-author .pk-author-data .author-description {
+	font-size: 90%;
+}
+
+.pk-widget-author .pk-author-button {
+	margin-top: 1rem;
+}
+
+.pk-widget-author .pk-social-links-wrap {
+	margin-top: 1rem;
+}
+
+.pk-widget-author .pk-social-links-items {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.pk-widget-author .pk-social-links-link {
+	color: #000;
+}
+
+.pk-author-social-links .pk-social-links-link {
+	padding: 0 0.25rem;
+}
+
+.pk-widget-author-with-bg {
+	color: white;
+}
+
+.pk-widget-author-with-bg a,
+.pk-widget-author-with-bg .title-block,
+.pk-widget-author-with-bg .pk-social-links-link {
+	color: white;
+}
+
+.pk-widget-author-with-bg a:hover,
+.pk-widget-author-with-bg .pk-social-links-link:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.pk-widget-author-with-bg .author-description {
+	color: white;
+}
+
+.pk-widget-author-with-bg .pk-widget-author-container {
+	padding: 2rem;
+}
+
+/*# end */
+
+/*# sourceMappingURL=public-powerkit-widget-author.css.map */

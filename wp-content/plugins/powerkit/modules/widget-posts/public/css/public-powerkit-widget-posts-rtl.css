@@ -1,0 +1,107 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/**
+ * Environment for all styles (variables, additions, etc).
+ */
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+.pk-widget-posts .pk-post-item:not(:first-child) {
+	margin-top: 1rem;
+}
+
+.pk-widget-posts .pk-post-outer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.pk-widget-posts .pk-post-thumbnail {
+	position: relative;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 80px;
+	flex: 0 0 80px;
+	margin-left: 2rem;
+}
+
+.pk-widget-posts .pk-post-thumbnail img {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+.pk-widget-posts .pk-post-data {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	width: 100%;
+}
+
+.pk-widget-posts .pk-post-number {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	border-radius: 100%;
+	font-size: 80%;
+}
+
+.pk-widget-posts .pk-post-data .meta-category {
+	display: inline-block;
+	margin-bottom: 0.25rem;
+}
+
+.pk-widget-posts .pk-post-data .entry-title {
+	margin-bottom: 0.25rem;
+}
+
+.pk-widget-posts .pk-post-meta {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.pk-widget-posts .pk-post-meta .sep {
+	display: inline-block;
+	padding: 0 0.5rem;
+}
+
+.pk-widget-posts .pk-post-meta-hide {
+	display: none;
+}
+
+.pk-widget-posts-template-large .pk-post-item:not(:first-child) {
+	margin-top: 2rem;
+}
+
+.pk-widget-posts-template-large .pk-post-outer {
+	display: block;
+}
+
+.pk-widget-posts-template-large .pk-post-thumbnail {
+	margin-left: 0;
+	margin-bottom: 1rem;
+}
+
+.pk-widget-posts-template-large .pk-post-thumbnail img {
+	width: 100%;
+	height: auto;
+	border-radius: 0;
+}
+
+/*# end */
+
+/*# sourceMappingURL=public-powerkit-widget-posts.css.map */

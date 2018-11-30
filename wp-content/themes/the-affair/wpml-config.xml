@@ -1,0 +1,13 @@
+<wpml-config>
+<admin-texts>
+<key name="theme_mods_the-affair">
+	<key name="search_placeholder" />
+	<key name="hero_title" />
+	<key name="hero_lead" />
+	<key name="post_subscribe_title" />
+	<key name="post_subscribe_text" />
+	<key name="footer_title" />
+	<key name="footer_copyright" />
+</key>
+</admin-texts>
+</wpml-config>

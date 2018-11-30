@@ -1,0 +1,204 @@
+
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/**
+ * Environment for all styles (variables, additions, etc).
+ */
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+.pk-twitter-wrap a {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.pk-twitter-header {
+	margin-bottom: 1.5rem;
+}
+
+.pk-twitter-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.pk-twitter-link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin-right: 1rem;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 50px;
+	flex: 0 0 50px;
+	width: 50px;
+	height: 50px;
+}
+
+.pk-twitter-avatar {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.pk-twitter-info a {
+	color: inherit;
+}
+
+.pk-twitter-name {
+	margin-bottom: 0;
+	word-break: break-all;
+}
+
+.pk-twitter-username {
+	font-size: 0.875rem;
+	word-break: break-all;
+}
+
+.pk-twitter-counters {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 1rem;
+	font-size: 80%;
+}
+
+.pk-twitter-counters .counter + .counter {
+	margin-left: 0.5rem;
+}
+
+.pk-twitter-counters .number {
+	color: #000;
+	font-weight: bold;
+	font-size: 0.875rem;
+}
+
+.pk-twitter-tweet:after {
+	display: table;
+	clear: both;
+	width: 100%;
+	content: '';
+}
+
+.pk-twitter-content {
+	font-size: 90%;
+}
+
+.pk-twitter-label {
+	display: none;
+}
+
+.pk-twitter-count,
+.pk-twitter-label {
+	margin-left: 0.25rem;
+	font-size: 80%;
+}
+
+.pk-twitter-count:empty {
+	display: none;
+}
+
+.pk-twitter-time {
+	display: block;
+	float: left;
+	margin-top: .25rem;
+	height: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.pk-twitter-time:before {
+	font-family: "powerkit-icons";
+	content: "";
+	margin-right: .25rem;
+}
+
+.pk-twitter-actions {
+	float: right;
+	margin-top: .25rem;
+	font-size: 80%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.pk-twitter-actions ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.pk-twitter-actions ul li {
+	display: inline-block;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.pk-twitter-actions ul li:not(:last-child) {
+	margin-right: .25rem;
+}
+
+.pk-twitter-actions ul li a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border: none;
+}
+
+.pk-twitter-actions ul li .pk-icon {
+	text-decoration: none;
+}
+
+.pk-twitter-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.pk-twitter-footer .pk-twitter-btn {
+	display: block;
+	width: 100%;
+}
+
+.pk-twitter-default .pk-twitter-tweet {
+	padding-top: 1rem;
+	margin-top: 1rem;
+	border-top: 1px #eeeeee solid;
+}
+
+/*# end */
+
+/*# sourceMappingURL=public-powerkit-twitter.css.map */

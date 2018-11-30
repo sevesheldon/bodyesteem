@@ -1,0 +1,33 @@
+/*
+ * Theme Name:  The Affair Child
+ * Theme URI:   https://codesupply.co/themes/the-affair/
+ * Description: The Affair Child Theme
+ * Author:      Code Supply Co.
+ * Author URI:  https://codesupply.co/
+ * Template:    the-affair
+ * Version:     3.0.0
+ */
+
+/* Copy any classes from parent theme here. They will override the parent's version. */
+
+body {
+	/*background-color: blue !important;*/
+}
+
+.woocommerce-area .post-container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
+
+.entry-content {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 768px){
+
+	.entry-content {
+    width: 100%;
+}
+}

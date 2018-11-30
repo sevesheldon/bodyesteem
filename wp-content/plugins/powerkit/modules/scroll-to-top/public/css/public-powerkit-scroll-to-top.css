@@ -1,0 +1,48 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/**
+ * Environment for all styles (variables, additions, etc).
+ */
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+.pk-scroll-to-top {
+	background: #a0a0a0;
+	display: none;
+	position: fixed;
+	left: -9999px;
+	bottom: 2rem;
+	opacity: 0;
+	-webkit-transition: opacity 0.25s;
+	transition: opacity 0.25s;
+}
+
+.pk-scroll-to-top.pk-active {
+	opacity: 1;
+	left: auto;
+	right: 2rem;
+}
+
+.pk-scroll-to-top:hover {
+	opacity: 0.7;
+}
+
+.pk-scroll-to-top .pk-icon {
+	display: block;
+	padding: .6rem;
+	color: white;
+	line-height: 1;
+	-webkit-transition: opacity .2s ease;
+	transition: opacity .2s ease;
+}
+
+@media (min-width: 760px) {
+	.pk-scroll-to-top {
+		display: block;
+	}
+}
+
+/*# end */
+
+/*# sourceMappingURL=public-powerkit-scroll-to-top.css.map */

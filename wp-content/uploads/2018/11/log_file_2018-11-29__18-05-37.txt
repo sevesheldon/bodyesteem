@@ -1,0 +1,32 @@
+
+---Downloaded files---
+The import files for: Demo Content were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://bodyesteem.sevesheldon.com
+Data file = /home8/seveshel/public_html/bodyesteem/wp-content/uploads/2018/11/demo-content-import-file_2018-11-29__18-05-37.xml
+Widget file = /home8/seveshel/public_html/bodyesteem/wp-content/uploads/2018/11/demo-widgets-import-file_2018-11-29__18-05-37.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Default Sidebar : 
+
+Featured Posts - Featured Posts - Imported
+Featured Posts - Recent Posts - Imported
+Categories - Categories - Imported
+Author - Author - Imported
+
+
+
+---pt-ocdi/after_import---
+

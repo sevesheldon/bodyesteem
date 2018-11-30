@@ -1,0 +1,642 @@
+
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/**
+ * Environment for all styles (variables, additions, etc).
+ */
+/*--------------------------------------------------------------*/
+/* Icons */
+/*--------------------------------------------------------------*/
+@font-face {
+	font-family: 'powerkit-icons';
+	src: url("../fonts/powerkit-icons.woff") format("woff"), url("../fonts/powerkit-icons.ttf") format("truetype"), url("../fonts/powerkit-icons.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="pk-icon-"],
+[class*=" pk-icon-"] {
+	font-family: 'powerkit-icons' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.pk-icon-globe:before,
+.pk-icon-website:before {
+	content: "";
+}
+
+.pk-icon-bell:before {
+	content: "";
+}
+
+.pk-icon-flickr:before {
+	content: "";
+}
+
+.pk-icon-snapchat:before {
+	content: "";
+}
+
+.pk-icon-zoom-in:before {
+	content: "";
+}
+
+.pk-icon-check:before {
+	content: "";
+}
+
+.pk-icon-minus:before {
+	content: "";
+}
+
+.pk-icon-chevron-right:before {
+	content: "";
+}
+
+.pk-icon-chevron-left:before {
+	content: "";
+}
+
+.pk-icon-x:before {
+	content: "";
+}
+
+.pk-icon-arrow-right-circle:before {
+	content: "";
+}
+
+.pk-icon-arrow-left-circle:before {
+	content: "";
+}
+
+.pk-icon-up:before {
+	content: "";
+}
+
+.pk-icon-comment:before {
+	content: "";
+}
+
+.pk-icon-refresh-cw:before {
+	content: "";
+}
+
+.pk-icon-reply:before {
+	content: "";
+}
+
+.pk-icon-like:before {
+	content: "";
+}
+
+.pk-icon-mail:before {
+	content: "";
+}
+
+.pk-icon-email:before {
+	content: "";
+}
+
+.pk-icon-video:before {
+	content: "";
+}
+
+.pk-icon-medium:before {
+	content: "";
+}
+
+.pk-icon-powerkit:before {
+	content: "";
+}
+
+.pk-icon-line:before {
+	content: "";
+}
+
+.pk-icon-fb-messenger:before {
+	content: "";
+}
+
+.pk-icon-bloglovin:before {
+	content: "";
+}
+
+.pk-icon-twitch:before {
+	content: "";
+}
+
+.pk-icon-github:before {
+	content: "";
+}
+
+.pk-icon-instagram:before {
+	content: "";
+}
+
+.pk-icon-telegram:before {
+	content: "";
+}
+
+.pk-icon-reddit:before {
+	content: "";
+}
+
+.pk-icon-behance:before {
+	content: "";
+}
+
+.pk-icon-diamond:before {
+	content: "";
+}
+
+.pk-icon-dribbble:before {
+	content: "";
+}
+
+.pk-icon-facebook:before {
+	content: "";
+}
+
+.pk-icon-feed:before {
+	content: "";
+}
+
+.pk-icon-rss:before {
+	content: "";
+}
+
+.pk-icon-get-pocket:before {
+	content: "";
+}
+
+.pk-icon-pocket:before {
+	content: "";
+}
+
+.pk-icon-google-plus:before {
+	content: "";
+}
+
+.pk-icon-googleplus:before {
+	content: "";
+}
+
+.pk-icon-linkedin:before {
+	content: "";
+}
+
+.pk-icon-map-marker:before {
+	content: "";
+}
+
+.pk-icon-phone:before {
+	content: "";
+}
+
+.pk-icon-viber:before {
+	content: "";
+}
+
+.pk-icon-pinterest:before {
+	content: "";
+}
+
+.pk-icon-retweet:before {
+	content: "";
+}
+
+.pk-icon-soundcloud:before {
+	content: "";
+}
+
+.pk-icon-spotify:before {
+	content: "";
+}
+
+.pk-icon-stumbleupon:before {
+	content: "";
+}
+
+.pk-icon-tumblr:before {
+	content: "";
+}
+
+.pk-icon-twitter:before {
+	content: "";
+}
+
+.pk-icon-vimeo:before {
+	content: "";
+}
+
+.pk-icon-vk:before {
+	content: "";
+}
+
+.pk-icon-vkontakte:before {
+	content: "";
+}
+
+.pk-icon-whatsapp:before {
+	content: "";
+}
+
+.pk-icon-youtube:before {
+	content: "";
+}
+
+.pk-d-none {
+	display: none;
+}
+
+.pk-clearfix {
+	clear: both;
+}
+
+.pk-clearfix:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+/* Color Styles */
+/*--------------------------------------------------------------*/
+.pk-color-primary {
+	color: #343a40;
+}
+
+.pk-color-secondary {
+	color: #A0A0A0;
+}
+
+.pk-bg-primary {
+	background-color: #343a40;
+}
+
+.pk-bg-overlay {
+	background-color: rgba(52, 58, 64, 0.5);
+}
+
+/* Font Styles */
+/*--------------------------------------------------------------*/
+.pk-font-primary {
+	font-weight: 700;
+}
+
+.pk-font-secondary {
+	font-size: 80%;
+	color: #6c757d;
+}
+
+.pk-font-heading {
+	color: #212529;
+	font-weight: 700;
+}
+
+/* Background */
+/*--------------------------------------------------------------*/
+.pk-bg-primary {
+	background-color: #007bff;
+}
+
+a.pk-bg-primary:hover, a.pk-bg-primary:focus,
+button.pk-bg-primary:hover,
+button.pk-bg-primary:focus {
+	background-color: #0062cc;
+}
+
+.pk-bg-secondary {
+	background-color: #A0A0A0;
+}
+
+a.pk-bg-secondary:hover, a.pk-bg-secondary:focus,
+button.pk-bg-secondary:hover,
+button.pk-bg-secondary:focus {
+	background-color: #878686;
+}
+
+.pk-bg-success {
+	background-color: #28a745;
+}
+
+a.pk-bg-success:hover, a.pk-bg-success:focus,
+button.pk-bg-success:hover,
+button.pk-bg-success:focus {
+	background-color: #1e7e34;
+}
+
+.pk-bg-info {
+	background-color: #17a2b8;
+}
+
+a.pk-bg-info:hover, a.pk-bg-info:focus,
+button.pk-bg-info:hover,
+button.pk-bg-info:focus {
+	background-color: #117a8b;
+}
+
+.pk-bg-warning {
+	background-color: #ffc107;
+}
+
+a.pk-bg-warning:hover, a.pk-bg-warning:focus,
+button.pk-bg-warning:hover,
+button.pk-bg-warning:focus {
+	background-color: #d39e00;
+}
+
+.pk-bg-danger {
+	background-color: #dc3545;
+}
+
+a.pk-bg-danger:hover, a.pk-bg-danger:focus,
+button.pk-bg-danger:hover,
+button.pk-bg-danger:focus {
+	background-color: #bd2130;
+}
+
+.pk-bg-light {
+	background-color: #f8f9fa;
+}
+
+a.pk-bg-light:hover, a.pk-bg-light:focus,
+button.pk-bg-light:hover,
+button.pk-bg-light:focus {
+	background-color: #dae0e5;
+}
+
+.pk-bg-dark {
+	background-color: #343a40;
+}
+
+a.pk-bg-dark:hover, a.pk-bg-dark:focus,
+button.pk-bg-dark:hover,
+button.pk-bg-dark:focus {
+	background-color: #1d2124;
+}
+
+.pk-bg-white {
+	background-color: #fff;
+}
+
+.pk-bg-transparent {
+	background-color: transparent;
+}
+
+/* Alerts */
+/*--------------------------------------------------------------*/
+.pk-alert {
+	position: relative;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1rem;
+	background: #f8f9fa;
+	font-size: 0.875rem;
+}
+
+.pk-alert a {
+	text-decoration: underline;
+	text-shadow: none;
+	border: none;
+}
+
+.pk-alert a:hover {
+	text-decoration: none;
+	text-shadow: none;
+	border: none;
+}
+
+.pk-alert p {
+	margin-bottom: 0.5rem;
+}
+
+.pk-alert > *:last-child {
+	margin-bottom: 0;
+}
+
+.pk-alert-multiline {
+	padding: 1.25rem 1.75rem;
+}
+
+.pk-alert-heading {
+	color: inherit;
+}
+
+.pk-alert-link {
+	font-weight: 700;
+}
+
+.pk-alert-dismissible {
+	padding-left: 4rem;
+}
+
+.pk-alert-dismissible .pk-close {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: 0 1rem;
+	color: inherit;
+}
+
+.pk-close {
+	float: left;
+	font-size: 1rem;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .75;
+}
+
+.pk-close:hover, .pk-close:focus {
+	color: #000;
+	text-decoration: none;
+	opacity: 1;
+}
+
+button.pk-close {
+	padding: 0;
+	text-decoration: none !important;
+	border: none !important;
+	-webkit-appearance: none !important;
+	background-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.pk-alert-primary {
+	border-right: #007bff 2px solid;
+}
+
+.pk-alert-primary .pk-icon-close,
+.pk-alert-primary .pk-alert-title {
+	color: #0062cc;
+}
+
+.pk-alert-secondary {
+	border-right: #A0A0A0 2px solid;
+}
+
+.pk-alert-secondary .pk-icon-close,
+.pk-alert-secondary .pk-alert-title {
+	color: #878686;
+}
+
+.pk-alert-success {
+	border-right: #28a745 2px solid;
+}
+
+.pk-alert-success .pk-icon-close,
+.pk-alert-success .pk-alert-title {
+	color: #1e7e34;
+}
+
+.pk-alert-info {
+	border-right: #17a2b8 2px solid;
+}
+
+.pk-alert-info .pk-icon-close,
+.pk-alert-info .pk-alert-title {
+	color: #117a8b;
+}
+
+.pk-alert-warning {
+	border-right: #ffc107 2px solid;
+}
+
+.pk-alert-warning .pk-icon-close,
+.pk-alert-warning .pk-alert-title {
+	color: #d39e00;
+}
+
+.pk-alert-danger {
+	border-right: #dc3545 2px solid;
+}
+
+.pk-alert-danger .pk-icon-close,
+.pk-alert-danger .pk-alert-title {
+	color: #bd2130;
+}
+
+.pk-alert-light {
+	border-right: #f8f9fa 2px solid;
+}
+
+.pk-alert-light .pk-icon-close,
+.pk-alert-light .pk-alert-title {
+	color: #dae0e5;
+}
+
+.pk-alert-dark {
+	border-right: #343a40 2px solid;
+}
+
+.pk-alert-dark .pk-icon-close,
+.pk-alert-dark .pk-alert-title {
+	color: #1d2124;
+}
+
+/* ToolTip */
+/*--------------------------------------------------------------*/
+.pk-tippy .pk-alert {
+	display: none;
+}
+
+.tippy-content .pk-alert {
+	border: none;
+	background: none;
+	color: inherit;
+	font-size: inherit;
+	padding: 0;
+	margin: 0;
+	max-width: 600px;
+}
+
+/* Badges */
+/*--------------------------------------------------------------*/
+.pk-badge {
+	background: #f8f9fa;
+	display: inline-block;
+	padding: 0.3em 0.6em;
+	font-size: 75%;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 30px;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.pk-badge:empty {
+	display: none;
+}
+
+.menu-item .pk-badge {
+	margin-right: 0.5rem;
+}
+
+.pk-button .pk-badge {
+	position: relative;
+	top: -1px;
+}
+
+.pk-badge-primary {
+	background: rgba(0, 123, 255, 0.1);
+	color: #0056b3;
+}
+
+.pk-badge-secondary {
+	background: rgba(160, 160, 160, 0.1);
+	color: #7a7a7a;
+}
+
+.pk-badge-success {
+	background: rgba(40, 167, 69, 0.1);
+	color: #19692c;
+}
+
+.pk-badge-info {
+	background: rgba(23, 162, 184, 0.1);
+	color: #0f6674;
+}
+
+.pk-badge-warning {
+	background: rgba(255, 193, 7, 0.1);
+	color: #ba8b00;
+}
+
+.pk-badge-danger {
+	background: rgba(220, 53, 69, 0.1);
+	color: #a71d2a;
+}
+
+.pk-badge-light {
+	background: rgba(248, 249, 250, 0.1);
+	color: #cbd3da;
+}
+
+.pk-badge-dark {
+	background: rgba(52, 58, 64, 0.1);
+	color: #121416;
+}
+
+.pk-badge-primary {
+	background: #00A0D2;
+	color: #fff;
+}
+
+.pk-badge-light {
+	background: #fff;
+	color: black;
+}
+
+/*# end */
+
+/*# sourceMappingURL=powerkit.css.map */

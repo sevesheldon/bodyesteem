@@ -1,0 +1,604 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/**
+ * Environment for all styles (variables, additions, etc).
+ */
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/* --------------------------------------------------------------*/
+.pk-share-buttons-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	line-height: 1;
+}
+
+.pk-share-buttons-wrap .pk-share-buttons-link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	width: 100%;
+	height: 36px;
+	padding: 0 1rem;
+	background: #F8F9FA;
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: .25s ease all;
+	transition: .25s ease all;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.pk-share-buttons-wrap .pk-share-buttons-link:hover {
+	color: white;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.pk-share-buttons-wrap .pk-share-buttons-link:hover .pk-share-buttons-count {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.pk-share-buttons-wrap .pk-share-buttons-link .pk-share-buttons-count {
+	-webkit-transition: .25s ease all;
+	transition: .25s ease all;
+	opacity: 0.6;
+}
+
+.pk-share-buttons-icon,
+.pk-share-buttons-title,
+.pk-share-buttons-label,
+.pk-share-buttons-count {
+	padding: 0 0.25rem;
+}
+
+.pk-share-buttons-total {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-right: 2rem;
+}
+
+.pk-share-buttons-total .pk-share-buttons-title {
+	display: none;
+	margin-bottom: .25rem;
+}
+
+.pk-share-buttons-total .pk-share-buttons-count {
+	margin-bottom: .25rem;
+}
+
+.pk-share-buttons-items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: -0.25rem;
+}
+
+.pk-share-buttons-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0.25rem;
+}
+
+.pk-share-buttons-icon {
+	line-height: inherit;
+}
+
+.pk-share-buttons-item > .pk-share-buttons-count {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	padding: 0.25rem 0.25rem;
+	margin-left: 0.5rem;
+	position: relative;
+	background: #FFFFFF;
+	border-color: #dbdbdb;
+	border: 1px solid #dbdbdb;
+	line-height: 1rem;
+	border-radius: 2px;
+	cursor: default;
+}
+
+.pk-share-buttons-item > .pk-share-buttons-count:after, .pk-share-buttons-item > .pk-share-buttons-count:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	content: " ";
+	position: absolute;
+	pointer-events: none;
+}
+
+.pk-share-buttons-item > .pk-share-buttons-count:after {
+	border-color: transparent;
+	border-right-color: #FFFFFF;
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+.pk-share-buttons-item > .pk-share-buttons-count:before {
+	border-color: transparent;
+	border-right-color: #dbdbdb;
+	border-width: 6px;
+	margin-top: -6px;
+}
+
+.pk-share-buttons-no-count .pk-share-buttons-count {
+	display: none;
+}
+
+.pk-share-buttons-total-no-count {
+	display: none;
+}
+
+/* ----------------------------- Layouts ---------------------------------*/
+.pk-share-buttons-layout-default .pk-share-buttons-item:nth-child(-n+2) {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.pk-share-buttons-layout-default .pk-share-buttons-item:nth-child(n+3) .pk-share-buttons-label {
+	display: none;
+}
+
+.pk-share-buttons-layout-equal .pk-share-buttons-item {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+/* ----------------------------- Schemes ---------------------------------*/
+.pk-share-buttons-scheme-default .pk-share-buttons-twitter .pk-share-buttons-link:hover {
+	background: #00aced;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-facebook .pk-share-buttons-link:hover {
+	background: #3b5998;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-instagram .pk-share-buttons-link:hover {
+	background: #675144;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-fb-messenger .pk-share-buttons-link:hover {
+	background: #0084ff;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-google-plus .pk-share-buttons-link:hover {
+	background: #dd4b39;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-googleplus .pk-share-buttons-link:hover {
+	background: #dd4b39;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-linkedin .pk-share-buttons-link:hover {
+	background: #007bb6;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-pinterest .pk-share-buttons-link:hover {
+	background: #cb2027;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-stumbleupon .pk-share-buttons-link:hover {
+	background: #eb4823;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-whatsapp .pk-share-buttons-link:hover {
+	background: #29a628;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-telegram .pk-share-buttons-link:hover {
+	background: #2ca5e0;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-line .pk-share-buttons-link:hover {
+	background: #25af00;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-viber .pk-share-buttons-link:hover {
+	background: #7b519d;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-pocket .pk-share-buttons-link:hover {
+	background: #ef4056;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-messenger .pk-share-buttons-link:hover {
+	background: #0084ff;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-vk .pk-share-buttons-link:hover {
+	background: #45668e;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-vkontakte .pk-share-buttons-link:hover {
+	background: #45668e;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-reddit .pk-share-buttons-link:hover {
+	background: #ff4500;
+}
+
+.pk-share-buttons-scheme-default .pk-share-buttons-mail .pk-share-buttons-link:hover {
+	background: #121212;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-link:hover > .pk-share-buttons-count {
+	color: #6c757d;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-twitter .pk-share-buttons-link {
+	color: #00aced;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-twitter .pk-share-buttons-link:hover {
+	color: #0087ba;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-facebook .pk-share-buttons-link {
+	color: #3b5998;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-facebook .pk-share-buttons-link:hover {
+	color: #2d4373;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-instagram .pk-share-buttons-link {
+	color: #675144;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-instagram .pk-share-buttons-link:hover {
+	color: #483930;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-fb-messenger .pk-share-buttons-link {
+	color: #0084ff;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-fb-messenger .pk-share-buttons-link:hover {
+	color: #006acc;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-google-plus .pk-share-buttons-link {
+	color: #dd4b39;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-google-plus .pk-share-buttons-link:hover {
+	color: #c23321;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-googleplus .pk-share-buttons-link {
+	color: #dd4b39;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-googleplus .pk-share-buttons-link:hover {
+	color: #c23321;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-linkedin .pk-share-buttons-link {
+	color: #007bb6;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-linkedin .pk-share-buttons-link:hover {
+	color: #005983;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-pinterest .pk-share-buttons-link {
+	color: #cb2027;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-pinterest .pk-share-buttons-link:hover {
+	color: #9f191f;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-stumbleupon .pk-share-buttons-link {
+	color: #eb4823;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-stumbleupon .pk-share-buttons-link:hover {
+	color: #c93412;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-whatsapp .pk-share-buttons-link {
+	color: #29a628;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-whatsapp .pk-share-buttons-link:hover {
+	color: #1f7d1e;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-telegram .pk-share-buttons-link {
+	color: #2ca5e0;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-telegram .pk-share-buttons-link:hover {
+	color: #1c88bd;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-line .pk-share-buttons-link {
+	color: #25af00;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-line .pk-share-buttons-link:hover {
+	color: #1a7c00;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-viber .pk-share-buttons-link {
+	color: #7b519d;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-viber .pk-share-buttons-link:hover {
+	color: #61407b;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-pocket .pk-share-buttons-link {
+	color: #ef4056;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-pocket .pk-share-buttons-link:hover {
+	color: #e9132e;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-messenger .pk-share-buttons-link {
+	color: #0084ff;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-messenger .pk-share-buttons-link:hover {
+	color: #006acc;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-vk .pk-share-buttons-link {
+	color: #45668e;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-vk .pk-share-buttons-link:hover {
+	color: #344d6c;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-vkontakte .pk-share-buttons-link {
+	color: #45668e;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-vkontakte .pk-share-buttons-link:hover {
+	color: #344d6c;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-reddit .pk-share-buttons-link {
+	color: #ff4500;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-reddit .pk-share-buttons-link:hover {
+	color: #cc3700;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-mail .pk-share-buttons-link {
+	color: #121212;
+}
+
+.pk-share-buttons-scheme-bold .pk-share-buttons-mail .pk-share-buttons-link:hover {
+	color: black;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-link {
+	color: #fff;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-link .pk-share-buttons-count {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-twitter .pk-share-buttons-link {
+	background: #00aced;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-twitter .pk-share-buttons-link:hover {
+	background: #21c2ff;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-facebook .pk-share-buttons-link {
+	background: #3b5998;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-facebook .pk-share-buttons-link:hover {
+	background: #4c70ba;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-instagram .pk-share-buttons-link {
+	background: #675144;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-instagram .pk-share-buttons-link:hover {
+	background: #866958;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-fb-messenger .pk-share-buttons-link {
+	background: #0084ff;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-fb-messenger .pk-share-buttons-link:hover {
+	background: #339dff;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-google-plus .pk-share-buttons-link {
+	background: #dd4b39;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-google-plus .pk-share-buttons-link:hover {
+	background: #e47365;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-googleplus .pk-share-buttons-link {
+	background: #dd4b39;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-googleplus .pk-share-buttons-link:hover {
+	background: #e47365;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-linkedin .pk-share-buttons-link {
+	background: #007bb6;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-linkedin .pk-share-buttons-link:hover {
+	background: #009de9;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-pinterest .pk-share-buttons-link {
+	background: #cb2027;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-pinterest .pk-share-buttons-link:hover {
+	background: #e03e44;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-stumbleupon .pk-share-buttons-link {
+	background: #eb4823;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-stumbleupon .pk-share-buttons-link:hover {
+	background: #ef6f52;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-whatsapp .pk-share-buttons-link {
+	background: #29a628;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-whatsapp .pk-share-buttons-link:hover {
+	background: #34ce33;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-telegram .pk-share-buttons-link {
+	background: #2ca5e0;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-telegram .pk-share-buttons-link:hover {
+	background: #58b8e7;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-line .pk-share-buttons-link {
+	background: #25af00;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-line .pk-share-buttons-link:hover {
+	background: #30e200;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-viber .pk-share-buttons-link {
+	background: #7b519d;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-viber .pk-share-buttons-link:hover {
+	background: #946db4;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-pocket .pk-share-buttons-link {
+	background: #ef4056;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-pocket .pk-share-buttons-link:hover {
+	background: #f36f80;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-messenger .pk-share-buttons-link {
+	background: #0084ff;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-messenger .pk-share-buttons-link:hover {
+	background: #339dff;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-vk .pk-share-buttons-link {
+	background: #45668e;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-vk .pk-share-buttons-link:hover {
+	background: #587fae;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-vkontakte .pk-share-buttons-link {
+	background: #45668e;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-vkontakte .pk-share-buttons-link:hover {
+	background: #587fae;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-reddit .pk-share-buttons-link {
+	background: #ff4500;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-reddit .pk-share-buttons-link:hover {
+	background: #ff6a33;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-mail .pk-share-buttons-link {
+	background: #121212;
+}
+
+.pk-share-buttons-scheme-bold-bg .pk-share-buttons-mail .pk-share-buttons-link:hover {
+	background: #2c2b2b;
+}
+
+@media (min-width: 720px) {
+	.pk-share-buttons-whatsapp,
+	.pk-share-buttons-fb-messenger {
+		display: none;
+	}
+}
+
+/* ----------------------------- Combinations ---------------------------------*/
+.pk-share-buttons-layout-simple.pk-share-buttons-scheme-bold .pk-share-buttons-item {
+	padding: 0;
+}
+
+.pk-share-buttons-layout-simple.pk-share-buttons-scheme-bold .pk-share-buttons-item > .pk-share-buttons-count {
+	height: auto;
+}
+
+.pk-share-buttons-layout-simple.pk-share-buttons-scheme-bold .pk-share-buttons-link {
+	background: transparent;
+}
+
+/*# end */
+
+/*# sourceMappingURL=public-powerkit-share-buttons.css.map */

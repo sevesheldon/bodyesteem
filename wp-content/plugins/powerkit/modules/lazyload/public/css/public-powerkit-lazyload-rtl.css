@@ -1,0 +1,57 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/**
+ * Environment for all styles (variables, additions, etc).
+ */
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+.pk-lazyload {
+	background-color: #ced4da;
+}
+
+.pk-lazyload.pk-lqip {
+	-webkit-filter: blur(20px);
+	filter: blur(20px);
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);
+	-webkit-transition: 0.25s -webkit-filter linear;
+	transition: 0.25s -webkit-filter linear;
+	transition: 0.25s filter linear;
+	transition: 0.25s filter linear, 0.25s -webkit-filter linear;
+}
+
+.pk-lazyload.pk-lazyload-unstyled {
+	background-color: transparent;
+	-webkit-animation: none;
+	animation: none;
+}
+
+@-webkit-keyframes animate-gradient {
+	0% {
+		background-position: 100% 50%;
+	}
+	50% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+@keyframes animate-gradient {
+	0% {
+		background-position: 100% 50%;
+	}
+	50% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+/*# end */
+
+/*# sourceMappingURL=public-powerkit-lazyload.css.map */
