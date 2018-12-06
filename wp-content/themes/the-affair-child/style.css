@@ -11,7 +11,7 @@
 /* Copy any classes from parent theme here. They will override the parent's version. */
 
 body {
-	/*background-color: blue !important;*/
+	background-color: #F5EEFE !important;
 }
 
 .woocommerce-area .post-container {
@@ -20,14 +20,35 @@ body {
 }
 
 
-.entry-content {
+.woocommerce {
     width: 50%;
+    margin: 0 auto;
+}
+
+
+
+/* CONTACT PAGE */
+
+form.wpcf7-form input, form.wpcf7-form span {
+    width: 350px;
+}
+
+form.wpcf7-form {
+    float: right;
+}
+
+
+@media screen and (min-width: 1199px){
+
+i.cs-icon.cs-icon-menu {
+    display: none;
+}
 }
 
 
 @media screen and (max-width: 768px){
 
-	.entry-content {
-    width: 100%;
+	.woocommerce {
+    width: 90%%;
 }
 }
