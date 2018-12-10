@@ -49,6 +49,16 @@ i.cs-icon.cs-icon-menu {
 @media screen and (max-width: 768px){
 
 	.woocommerce {
-    width: 90%%;
+    width: 90% !important;
 }
+
+	.woocommerce ul.products[class*=columns-] li.product {
+	    width: 100% !important;
+}
+
+	.woocommerce-area .post-container {
+	    padding-left: 2rem !important;
+	    padding-right: 2rem !important;
+}
+
 }
